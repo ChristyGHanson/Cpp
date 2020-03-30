@@ -1,0 +1,38 @@
+// Requires:
+// variables, data types, and numerical operators
+// basic input/output
+// logic (if statements, switch statements)
+
+// Write a program that presents the user w/ a choice of 5 beverages.
+// Then allow the user to choose a beverage by entering a number 1-5.
+// Output which beverage they chose.
+
+// Challenge: ★ If you program uses if statements instead of a switch statement, modify it to use a switch statement.
+// If instead your program uses a switch statement, modify it to use if/else-if statements.
+
+// Challenge: ★★ Modify the program so that if the user enters a choice other than 1-5 then it will output "Error. choice was not valid, here is your money back."
+
+#include <iostream>
+using namespace std;
+
+int main (){
+    //if //if 1, Baja Blast. if 2, Voltage, etc.
+    int drink;
+    cout << "You have a choice of five beverages:\n";
+    cout << "1 - Baja Blast\n";
+    cout << "2 - Voltage\n";
+    cout << "3 - Code Red\n";
+    cout << "4 - White Out\n";
+    cout << "5 - Live Wire\n";
+    cout << "\n";
+    cout << "Enter the number for the beverage you want and press 'Enter.'\n";
+    cout << "\n";
+    cin >> drink;
+    cout << "\n";
+    if (drink >= 1 && drink <= 5) {
+        cout << "You chose " << drink << ".\n";
+    } else if (drink >= 6) {
+    cout << "Error. Choice was not valid. Here is your money back.\n";
+    }
+    cout << "\n";
+}
