@@ -1,0 +1,23 @@
+// g++ -Wall -Wextra ifstatement.cpp -o ifstatement.exe
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main (){
+    cout << "Do you like video games?\n";
+    cout << "Type your answer:\n";
+    string user_input;
+    
+    while (true){ //infinite loop
+        cin >> user_input; //enter something.
+        if (user_input == "yes"){
+            cout << "Cool, dude. Let's play.\n";
+        } else if (user_input == "no"){
+            cout << "Let's play board games instead.\n";
+            break; //Never jumps anywhere else in program. Terminates loop. Used in loops.
+        } else{
+            cout << "Bruh.\n";
+        }
+    }
+} 
