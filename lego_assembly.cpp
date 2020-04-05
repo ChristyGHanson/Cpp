@@ -1,4 +1,5 @@
 // g++ -Wall -Wextra lego_assembly.cpp -o lego_assembly.exe
+// Thanks, STL. :3
 
 #include <iostream>
 #include <cmath>
